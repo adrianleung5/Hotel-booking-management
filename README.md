@@ -1,24 +1,29 @@
 ## Introduction
 
-This project was created in order for small businesses to easily keep track of their hotel bookings rentals. It will enable them to keep track of room bookings and edit them.
+This project was created in order for hotels to easily calcualte and track the expenses hotel guests spend during their vists in hotels
 
 ### Target Audience
 
-* Hotel owners/management that want to organise and manage their room bookings efficently and more transpararenty.
+* Hotel management/ receptionist who handles the cost of staying in the hotel for guests
 
 ### User Stories
 
-* As a User, I would like to be able to easily find the various menus so that I can view information or add / edit records.
-* As a User, I would like to be able to manage my rooms so that I can easily keep track of what rooms I have available and edit / remove as neccessary.
-* As a User, I would like to be able to manage bookings so that I can add, delete and find customer bookings with ease.
+* As a User, I would like to be able to easily find various guest infomration with ease
+* As a User, I would like to be able to differentiate the different costs for customers during their stay. Such as restaurant expenses and room expenses.
+* As a User, I would like to be able to easily the determine the cost of the room the customers have used
 * As a User, I would like to be able to view bookings with ease,
+* Aa a User, I would like to be able to retrieve specific booking information with ease.
 * As a User, I would like to be able to return to the main menu without having to restart the application.
+* As a user, I would like to be able to generate a bill for customers to enable them to see the costs during their stay.
 
 ### Features Planned
 
 * Simple, easy to use application with clear navigation.
-* Ability to remove and edit room bookings
-* Ability to view service records.
-* Ability to view service records.
-* Return to main menu option through sub menus.
+* Ability to store customer information such as name, addresss, and dates of their vist
+* Ability to calculate the price of the room during the customers stay.
+* Ability to calculate restaurant expenses during the their stay.
+* Ability to calculate the total price of stay.
+* Generate a bill for guests
+
+
 
