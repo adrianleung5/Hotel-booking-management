@@ -1,31 +1,24 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## Introduction
 
-Welcome adrianleung5,
+This project was created in order for small businesses to easily keep track of their hotel bookings rentals. It will enable them to keep track of room bookings and edit them.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+### Target Audience
 
-## Reminders
+* Hotel owners/management that want to organise and manage their room bookings efficently and more transpararenty.
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+### User Stories
 
-## Creating the Heroku app
+* As a User, I would like to be able to easily find the various menus so that I can view information or add / edit records.
+* As a User, I would like to be able to manage my rooms so that I can easily keep track of what rooms I have available and edit / remove as neccessary.
+* As a User, I would like to be able to manage bookings so that I can add, delete and find customer bookings with ease.
+* As a User, I would like to be able to view bookings with ease,
+* As a User, I would like to be able to return to the main menu without having to restart the application.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+### Features Planned
 
-1. `heroku/python`
-2. `heroku/nodejs`
+* Simple, easy to use application with clear navigation.
+* Ability to remove and edit room bookings
+* Ability to view service records.
+* Ability to view service records.
+* Return to main menu option through sub menus.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
