@@ -2,8 +2,11 @@ import pyfiglet
 
 class hotel_bill_management:
     def customer_information (self):
-        pass
-    def calculate_room_price (self):
+        name = input("Name")
+        Address = input("address")
+        check_in_date = input("check in ")
+        check_out_date =  input("check out")
+    def calculate_room_price (self): 
         pass
     def calculate_restaurant_expenses (self):
         pass
