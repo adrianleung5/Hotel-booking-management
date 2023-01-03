@@ -9,11 +9,12 @@ color_end = '\033[0m'
 
 
 class hotel_bill_management:
-    def __init__(self, name = "", phone_number= "", email = "", check_in_date = "", check_out_date = "", no_of_days = 0 , room_price = 0, selected_room = ""):
+    def __init__(self, name = "", phone_number= "", email = "", customer_info_added = False,  check_in_date = "", check_out_date = "", no_of_days = 0 , room_price = 0, selected_room = ""):
         print(pyfiglet.figlet_format("leung hotel"))
         self.name = name
         self.phone_number = phone_number
         self.email = email
+        self.customer_info_added = customer_info_added
         self.check_in_date = check_in_date
         self.check_out_date = check_out_date
         self.no_of_days = no_of_days
@@ -36,7 +37,7 @@ class hotel_bill_management:
                 print(red_color+"Phone number must contain atleast 10 numbers"+color_end)
                 continue
 
-            self.email = input("Enter your email")
+            self.email = input("Enter your email: ")
             if not self.check_email(self.email):
                 print(red_color+"Please enter valid email address"+color_end)
                 continue
@@ -53,24 +54,40 @@ class hotel_bill_management:
             else:
                 print(green_color+"\n***** Customer Information added Sucessfully ***** \n"+color_end)
                 print(green_color+ "Customer wishes to stay for " + str(self.no_of_days)+" days, please choose rooms next\n"+color_end)
-                continue
-
-            self.room_price = input("which room would you like to select")
-            print("1 single room")
-            print("2 ouble room")
-            print("3 triple room")
-            print("4 family room")
-            if self.room_price == "1":
-                self.room_price
-            elif self.room_price =="2":
-                print ("price = 100")
-            elif self.room_price =="3":
-                print ("price = 150")
-            elif self.room_price =="4":
-                print ("price = 200")
-
+                self.customer_info_added = True
+                break
+            
     def calculate_room_price (self): 
-        pass
+        if self.customer_info_added:
+            while True:
+                print("**please select from the following available rooms**")
+                print("1 : single room--> 50 eur ")
+                print("2 : double room--> 100 eur ")
+                print("3 : triple room--> 150 eur ")
+                print("4 : family room--> 200 eur ")
+                choice = input("Please enter yout choice number: ")
+                if choice == "1":
+                    self.selected_room = "single room"
+                    self.room_price = self.no_of_days*50
+                elif choice == "2":
+                    self.selected_room = "double room"
+                    self.room_price = self.no_of_days*100
+                elif choice == "3":
+                    self.selected_room = "triple room"
+                    self.room_price = self.no_of_days*150
+                elif choice == "4":
+                    self.selected_room = "family room"
+                    self.room_price = self.no_of_days*200
+                else:
+                    print(red_color+"please select the correct option"+color_end) 
+                    continue       
+                print(green_color+"**** Total room price for "+ str(self.no_of_days) + " is " + str(self.room_price) + "eur ****" +color_end)
+                print(green_color+"Please continue to the restaurant expenses"+ color_end+ "\n")
+                break
+        else:
+            print(red_color+"You need to add customer information before selecting a room"+color_end)
+            
+
     def calculate_restaurant_expenses (self):
         pass
     def calculate_total (self):
