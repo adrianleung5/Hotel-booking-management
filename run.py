@@ -9,17 +9,19 @@ color_end = '\033[0m'
 
 
 class hotel_bill_management:
-    def __init__(self, name = "", phone_number= "", email = "", customer_info_added = False,  check_in_date = "", check_out_date = "", no_of_days = 0 , room_price = 0, selected_room = ""):
+    def __init__(self, name = "", phone_number= "", email = "", customer_info_added = False,  room_info_added = False, restaurant_price = 0, check_in_date = "", check_out_date = "", no_of_days = 0 , room_price = 0, selected_room = ""):
         print(pyfiglet.figlet_format("leung hotel"))
         self.name = name
         self.phone_number = phone_number
         self.email = email
+        self.room_info_added = room_info_added
         self.customer_info_added = customer_info_added
         self.check_in_date = check_in_date
         self.check_out_date = check_out_date
         self.no_of_days = no_of_days
         self.room_price = room_price
         self.selected_room = selected_room 
+        self.restaurant_price = restaurant_price
 
     def customer_information (self):
         while True:
@@ -83,13 +85,58 @@ class hotel_bill_management:
                     continue       
                 print(green_color+"**** Total room price for "+ str(self.no_of_days) + " is " + str(self.room_price) + "eur ****" +color_end)
                 print(green_color+"Please continue to the restaurant expenses"+ color_end+ "\n")
+                self.room_info_added = True
                 break
         else:
             print(red_color+"You need to add customer information before selecting a room"+color_end)
             
-
     def calculate_restaurant_expenses (self):
-        pass
+        if not self.customer_info_added:
+            print(red_color+"You are missing customer information")
+        elif not self.room_info_added:
+            print("You are missing room details")
+        else:
+            while True:
+                print("**** Restaurant menu ****")
+                print("1: breakfast-- > 15 eur")
+                print("2: Lunch--> 25 eur")
+                print("3: Dinner --> 40 eur")
+                print("4: Desert --> 10 eur")
+                print("5: beverages --> 5 eur")
+                print("6: exit")
+                choice = input("Please select an option: ")
+                if choice == "1":
+                    quantity = int(input("Please enter the amount of quantity: "))
+                    self.restaurant_price = self.restaurant_price + 15*quantity
+                elif choice == "2":
+                    quantity = int(input("Please enter the amount of quantity: "))
+                    self.restaurant_price = self.restaurant_price + 25*quantity
+                elif choice == "3":
+                    quantity = int(input("Please enter the amount of quantity: "))
+                    self.restaurant_price = self.restaurant_price + 40*quantity
+                elif choice == "4":
+                    quantity = int(input("Please enter the amount of quantity: "))
+                    self.restaurant_price = self.restaurant_price + 10*quantity
+                elif choice == "5":
+                    quantity = int(input("Please enter the amount of quantity: "))
+                    self.restaurant_price = self.restaurant_price + 5*quantity
+                elif choice == "6":
+                    break
+                else:
+                    print(red_color+"please enter the correct choice"+color_end)
+            print(green_color+"**** Total restaurant cost = " + str(self.restaurant_price)+" eur ****" + color_end)
+
+                    
+
+
+
+            
+
+            
+
+            
+
+
     def calculate_total (self):
         pass
     def generate_bill (self):
@@ -146,13 +193,12 @@ def main ():
       
         print("Welcome to the hotel please select from the options below")
         print("1 enter customer information")
-        print("2 calculate the room price")
+        print("2 Select the room")
         print("3 calculate restaurant expenses")
-        print("4 calculate total") 
-        print("5 generete bill")
-        print("6 retrieve bill for room")
-        print("7 remove bill for room")
-        print("8 exit")
+        print("4 generete bill")
+        print("5 retrieve bill for room")
+        print("6 remove bill for room")
+        print("7 exit")
         choice = input("please enter your choice\n")
         if choice == "1":
             hotel.customer_information()
