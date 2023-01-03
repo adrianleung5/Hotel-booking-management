@@ -1,11 +1,11 @@
 import pyfiglet 
 import datetime
+import re
 
 red_color = '\033[91m'
 green_color  = '\33[32m'
 
 color_end = '\033[0m'
-
 
 
 class hotel_bill_management:
@@ -37,8 +37,10 @@ class hotel_bill_management:
                 continue
 
             self.email = input("Enter your email")
-            # add in validation for email
-
+            if not self.check_email(self.email):
+                print(red_color+"Please enter valid email address"+color_end)
+                continue
+            
             self.check_in_date = input("enter your check in date in the format of dd/mm/yyyy : ")
             if not self.isvalidcheck_in_date(self.check_in_date):
                 print(red_color+"Check in date is not valid or it is in the past, please try again"+color_end)
@@ -59,13 +61,11 @@ class hotel_bill_management:
             print("3 triple room")
             print("4 family room")
             if self.room_price == "1":
-                print("price = 50")
-            elif self.room_price =="2":
-                print ("price = 100")
+                self.room_price
             elif self.room_price =="2":
                 print ("price = 100")
             elif self.room_price =="3":
-                print ("price = 100")
+                print ("price = 150")
             elif self.room_price =="4":
                 print ("price = 200")
 
@@ -114,13 +114,14 @@ class hotel_bill_management:
         finally:
             return valid_date
     
-    def check_email:
-        pat = pat = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
-    if re.match(pat,s):
-        print("Valid Email")
-    else:
-        print("Invalid Email")
-
+    def check_email(self, email):
+        valid_email = False
+        pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+        if re.match(pattern,email):
+            valid_email = True
+            return valid_email
+        else:
+            return valid_email
 
 def main ():
     hotel = hotel_bill_management()
