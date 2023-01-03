@@ -52,6 +52,7 @@ class hotel_bill_management:
                 print(green_color+"\n***** Customer Information added Sucessfully ***** \n"+color_end)
                 print(green_color+ "Customer wishes to stay for " + str(self.no_of_days)+" days, please choose rooms next\n"+color_end)
                 continue
+
             self.room_price = input("which room would you like to select")
             print("1 single room")
             print("2 ouble room")
@@ -112,7 +113,13 @@ class hotel_bill_management:
             valid_date = False
         finally:
             return valid_date
-
+    
+    def check_email:
+        pat = pat = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+    if re.match(pat,s):
+        print("Valid Email")
+    else:
+        print("Invalid Email")
 
 
 def main ():
