@@ -51,6 +51,22 @@ class hotel_bill_management:
             else:
                 print(green_color+"\n***** Customer Information added Sucessfully ***** \n"+color_end)
                 print(green_color+ "Customer wishes to stay for " + str(self.no_of_days)+" days, please choose rooms next\n"+color_end)
+                continue
+            self.room_price = input("which room would you like to select")
+            print("1 single room")
+            print("2 ouble room")
+            print("3 triple room")
+            print("4 family room")
+            if self.room_price == "1":
+                print("price = 50")
+            elif self.room_price =="2":
+                print ("price = 100")
+            elif self.room_price =="2":
+                print ("price = 100")
+            elif self.room_price =="3":
+                print ("price = 100")
+            elif self.room_price =="4":
+                print ("price = 200")
 
     def calculate_room_price (self): 
         pass
