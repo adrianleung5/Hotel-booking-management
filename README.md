@@ -25,5 +25,20 @@ This project was created in order for hotels to easily calcualte and track the e
 * Ability to calculate the total price of stay.
 * Generate a bill for guests
 
+IMPLEMENTATION
+* Bill Menu
+    * When the application starts, you will get a welcome message with a main menu with the following options:
+    * 1 - Enter customer information
+    * 2 - Select the room
+    * 3 - Calculate restaurant expenses
+    * 4 - Generate bill
+    * 5 - Retrieve room for bill
+    * 6 - Remove bill for room
+    * 7 - Enable the user to exit the application
+    * The user must input a correct number corresponding to each menu or they will be alerted of an inccorect choice and the menu will be presented again.
+    *
+
+
+
 
 
