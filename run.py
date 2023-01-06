@@ -126,19 +126,23 @@ class hotel_bill_management:
                     print(red_color+"please enter the correct choice"+color_end)
             print(green_color+"**** Total restaurant cost = " + str(self.restaurant_price)+" eur ****" + color_end)
 
-                    
-
-
-
-            
-
-            
-
-            
-
-
     def calculate_total (self):
-        pass
+        if not self.customer_info_added:
+            print(red_color+"You are missing customer information")
+        elif not self.room_info_added:
+            print("You are missing room details")
+        elif not self.restaurant_price():
+            print("you are missing restaurant expenses")
+        else:
+            while True:
+                print("****Please the find bill for your stay below****")
+                
+
+
+
+
+
+
     def generate_bill (self):
         pass
     def retrieve_bill_for_room (self):
