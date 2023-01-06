@@ -36,7 +36,14 @@ IMPLEMENTATION
     * 6 - Remove bill for room
     * 7 - Enable the user to exit the application
     * The user must input a correct number corresponding to each menu or they will be alerted of an inccorect choice and the menu will be presented again.
-    *
+
+ Customer information Menu
+    * When customer information menu has been selected, the following menu options appear:
+        * - Enter your customer name - This will enables users to input and store customers name.
+        * - Enter phone number - This will allow the users to input their and store customer phone numbers.
+        * - Enter your email - This will allow the users to enter and store their customer email.
+        * - Enter check in date - This option will enable users to enter customer check in date during their stay.
+        * - Enter check out date - This option will return the user to enter customer checkout date during their
 
 
 

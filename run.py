@@ -167,7 +167,7 @@ class hotel_bill_management:
                 vat_price = (self.room_price*10)/100
                 print(yellow_color+"Cost of VAT: " + str(vat_price) + color_end)
                 total_price = vat_price + self.room_price 
-                print(yelow_color + "Total price : " +str(total_price) + color_end)
+                print(yellow_color + "Total price : " +str(total_price) + color_end)
                 print(yellow_color+"******************************"+ color_end)
                
 
