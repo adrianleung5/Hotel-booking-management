@@ -1,12 +1,25 @@
 import pyfiglet 
 import datetime
 import re
+from google.oauth2.service_account import Credentials
+import gspread
 
 red_color = '\033[91m'
 green_color  = '\33[32m'
 yellow_color = '\33[33m'
 
 color_end = '\033[0m'
+
+SCOPE = [
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive.file",
+    "https://www.googleapis.com/auth/drive",
+]
+
+CREDS = Credentials.from_service_account_file('creds.json')
+SCOPED_CREDS = CREDS.with_scopes(SCOPE)
+GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
+SHEET = GSPREAD_CLIENT.open("hotel_billing")
 
 
 class hotel_bill_management:
@@ -264,6 +277,8 @@ class hotel_bill_management:
         else:
             return valid_email
 
+    def update_spreadsheet
+
 def main ():
     hotel = hotel_bill_management()
     while True:
@@ -287,7 +302,6 @@ def main ():
             quit()
         else:
             print("please enter the correct choice\n")
-
 
 if __name__ == "__main__":
     main()
