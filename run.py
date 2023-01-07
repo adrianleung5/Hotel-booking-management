@@ -183,6 +183,7 @@ class hotel_bill_management:
                 total_price = vat_price + self.room_price 
                 print(yellow_color+ "Total Price : " +str(total_price) + " EUR" + color_end)
                 print(yellow_color+"********************END OF BILL*******************************\n"+ color_end)
+                self.update_spreadsheet(vat_price, total_price)
                 while True:
                     print("Do you wish to continue with the next customer?")
                     print("1: Continue to main menu")
@@ -216,6 +217,7 @@ class hotel_bill_management:
             total_price = vat_price + self.room_price + self.restaurant_price
             print(yellow_color + "Total price : " +str(total_price) + " EUR" + color_end)
             print(yellow_color+"********************END OF BILL*******************************\n"+ color_end)
+            self.update_spreadsheet(vat_price, total_price)
             while True:
                 print("Do you wish to continue with the next customer?")
                 print("1: Continue to main menu")
@@ -277,7 +279,19 @@ class hotel_bill_management:
         else:
             return valid_email
 
-    def update_spreadsheet
+    def update_spreadsheet(self,vat,total_price):
+        spread_sheet = SHEET.worksheet("billing information")
+        spread_sheet.append_row([self.name,
+        self.phone_number,
+        self.email,
+        self.check_in_date,
+        self.check_out_date,
+        self.no_of_days,
+        self.selected_room,
+        self.room_price,
+        self.restaurant_price,
+        vat, 
+        total_price])
 
 def main ():
     hotel = hotel_bill_management()
