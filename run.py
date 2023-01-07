@@ -21,6 +21,21 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open("hotel_billing")
 
+MAIN_MENU = """
+Welcome to the hotel please select from the options below
+    1 enter customer information
+    2 Select the room
+    3 calculate restaurant expenses
+    4 generete bill
+    5 exit
+"""
+ROOM_MENU = """
+ **Please select from the following available rooms**
+    1 : Single Room--> 50  EUR 
+    2 : Double Room--> 100 EUR 
+    3 : Triple Room--> 150 EUR 
+    4 : Family Room--> 200 EUR 
+"""
 
 class hotel_bill_management:
     def __init__(self, name = "", phone_number= "", email = "", customer_info_added = False,  room_info_added = False, restaurant_price = 0, check_in_date = "", check_out_date = "", no_of_days = 0 , room_price = 0, selected_room = ""):
@@ -88,11 +103,7 @@ class hotel_bill_management:
     def calculate_room_price (self): 
         if self.customer_info_added:
             while True:
-                print("**Please select from the following available rooms**")
-                print("1 : Single Room--> 50 EUR ")
-                print("2 : Double Room--> 100 EUR ")
-                print("3 : Triple Room--> 150 EUR ")
-                print("4 : Family Room--> 200 EUR ")
+                print(ROOM_MENU)
                 choice = input("Please enter yout choice number: ")
                 if choice == "1":
                     self.selected_room = "Single Room--> 50 EUR"
@@ -297,12 +308,7 @@ def main ():
     hotel = hotel_bill_management()
     while True:
       
-        print("Welcome to the hotel please select from the options below")
-        print("1 enter customer information")
-        print("2 Select the room")
-        print("3 calculate restaurant expenses")
-        print("4 generete bill")
-        print("5 exit")
+        print(MAIN_MENU)
         choice = input("please enter your choice\n")
         if choice == "1":
             hotel.customer_information()
