@@ -39,31 +39,33 @@ IMPLEMENTATION
 
  * Customer information Menu
     * When customer information menu has been selected, the following menu options appear:
-        * - Enter your customer name - This will enables users to input and store customers name.
-        * - Enter phone number - This will allow the users to input their and store customer phone numbers.
-        * - Enter your email - This will allow the users to enter and store their customer email.
-        * - Enter check in date - This option will enable users to enter customer check in date during their stay.
-        * - Enter check out date - This option will return the user to enter customer checkout date during their.
-        * - Total room price - This will be calculated and displayed to the user based on the number of days and type of room.
+    * Enter your customer name - This will enables users to input and store customers name.
+    * Enter phone number - This will allow the users to input their and store customer phone numbers.
+    * Enter your email - This will allow the users to enter and store their customer email.
+    * Enter check in date - This option will enable users to enter customer check in date during their stay.
+    * Enter check out date - This option will return the user to enter customer checkout date during their.
+    * Total room price - This will be calculated and displayed to the user based on the number of days and type of room.
 
  * Selecting room Menu
-        * 1 - Single room 50 eur
-        * 2 -  Double room 100 eur
-        * 3 -  Triple room 150 eur
-        * 4 -  Family room 200 eur
-    Total room price
-        * This will be displayed to the user once the user has selected a room. It is calculted based on length of stay multiplied by the type of room.
+    * Single room - 50 eur
+    * Double room - 100 eur
+    * Triple room - 150 eur
+    * Family room - 200 eur
+
+   Total room price
+ * This will be displayed to the user once the user 
+ as selected a room. It is calculted based on length of stay multiplied by the type of room.
 
  * Restaurant Menu
-        * 1 Breakfast - 15 eur
-        * 2 Lunch - 25 eur
-        * 3 Dinner - 40 eur
-        * 4 Beverages - 25 eur
-        * 5 Exit
+    * 1 Breakfast - 15 eur
+    * 2 Lunch - 25 eur
+    * 3 Dinner - 40 eur
+    * 4 Beverages - 25 eur
+    * 5 Exit
     Quantity
-        * Once users select a meal, they will be asked to input the quanaity of meals purchased. 
+    * Once users select a meal, they will be asked to input the quanaity of meals purchased. 
     Total restaurant cost
-        * This will be displayed to the user once the user has entered the number of meals they have had.
+     * This will be displayed to the user once the user has entered the number of meals they have had.
 
 * Generate bill
 
