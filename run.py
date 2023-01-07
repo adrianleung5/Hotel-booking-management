@@ -144,7 +144,7 @@ class hotel_bill_management:
             print(red_color+"You are missing customer information"+color_end)
         elif not self.room_info_added:
             print(red_color+"You are missing room details"+color_end)
-        elif not self.room_price == 0:
+        elif self.room_price == 0:
             print(red_color+"No restaurant expenses"+color_end)
             print("Would you like to add restuarant expenses?")
             print("1: add restaurant expenses to bill")
@@ -169,6 +169,27 @@ class hotel_bill_management:
                 total_price = vat_price + self.room_price 
                 print(yellow_color + "Total price : " +str(total_price) + color_end)
                 print(yellow_color+"******************************"+ color_end)
+        else:
+            print(yellow_color+"**** LEUNGHOTEL BILL ****"+color_end)
+            print(yellow_color+"CUSTOMER INFORMATION"+color_end)
+            print(yellow_color+"Name: " + self.name+color_end)
+            print(yellow_color+"Phone number: " + str(self.phone_number)+color_end)
+            print(yellow_color+"Email: " + self.email+color_end + "\n") 
+            print(yellow_color+"ROOM EXPENSES: "+color_end)
+            print(yellow_color+"Selected room: " + self.selected_room + color_end)
+            print(yellow_color+ "Check in date: " + self.check_in_date+color_end)
+            print(yellow_color+ "Check out date: " + self.check_out_date+color_end)
+            print(yellow_color+ "Number of days: " + str(self.no_of_days) + color_end)
+            print(yellow_color+ "Selected room: " + self.selected_room)
+            print(yellow_color+"RESTAURANT EXPENSES: "+color_end)
+            print(yellow_color+"Total restauarant expenses: " + str(self.restaurant_price) + color_end)
+            vat_price = ((self.room_price + self.restaurant_price)*10)/100
+            print(yellow_color+"Cost of VAT: " + str(vat_price) + color_end)
+            total_price = vat_price + self.room_price + self.restaurant_price
+            print(yellow_color + "Total price : " +str(total_price) + color_end)
+            print(yellow_color+"******************************"+ color_end)
+
+
                
 
     def generate_bill (self):
