@@ -45,7 +45,8 @@ IMPLEMENTATION
     * 7 - Enable the user to exit the application
     * The user must input a correct number corresponding to each menu or they will be alerted of an inccorect choice and the menu will be presented again.
 
-    ![Hotel Menu](docs/screenshots/booking_menu.PNG)
+    
+    ![Bill Menu](docs/images/leunghotel.png)
 
  * Customer information Menu
     * When customer information menu has been selected, the following menu options appear:
@@ -55,6 +56,9 @@ IMPLEMENTATION
     * Enter check in date - This option will enable users to enter customer check in date during their stay.
     * Enter check out date - This option will return the user to enter customer checkout date during their.
     * Total room price - This will be calculated and displayed to the user based on the number of days and type of room.
+
+      ![Customer Information](docs/images/customer_information.png)
+
 
  * Selecting room Menu
     * Single room - 50 eur
@@ -72,16 +76,18 @@ IMPLEMENTATION
     * 3 Dinner - 40 eur
     * 4 Beverages - 25 eur
     * 5 Exit
-    Quantity
-    * Once users select a meal, they will be asked to input the quanaity of meals purchased. 
-    Total restaurant cost
-     * This will be displayed to the user once the user has entered the number of meals they have had.
+* Total restaurant cost
+    * This will be displayed to the user once the user has entered the number of meals they have had.
+
+   ![Restaurant Menu](docs/images/restaurant_menu3.png)
 
 * Generate bill
    * This will generate the bill with the information for all of the customers expenses.
    * Users will then have an option to return to the main menu or leave the application.
 
-   ## Technologies
+   ![Bill](docs/images/bill.png)
+
+### Technologies
 
 * Python - Python was the main language used to build the application.
 * [Pyfiglet](https://pypi.org/project/pyfiglet/0.7/) was used to create the design of the main menu 
@@ -89,7 +95,7 @@ IMPLEMENTATION
 * [Google Drive](https://drive.google.com/) and [Google sheets API](https://developers.google.com/sheets/api) 
     was connected, so data can be collected and stored on Google spreadhseet.
 * [Re](https://www.w3schools.com/python/python_regex.asp) was used to validate the input for customers email information.
-* [Gspread] (https://docs.gspread.org/en/v5.7.0/) was used for Google Sheets.
+* [Gspread](https://docs.gspread.org/en/v5.7.0/) was used for Google Sheets.
 
  ## Testing
 
