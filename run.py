@@ -37,6 +37,16 @@ ROOM_MENU = """
     4 : Family Room--> 200 EUR 
 """
 
+RESTAURANT_MENU = """
+ ** Please select from the Menu**
+    1 : Breakfast --> 15 EUR
+    2 : Lunch --> 25 EUR
+    3 : Dinner --> 40 EUR
+    4 : Desert --> 10 EUR
+    5 : Beverages --> 5 EUR
+    6 : Exit
+"""
+
 class hotel_bill_management:
     def __init__(self, name = "", phone_number= "", email = "", customer_info_added = False,  room_info_added = False, restaurant_price = 0, check_in_date = "", check_out_date = "", no_of_days = 0 , room_price = 0, selected_room = ""):
         print(pyfiglet.figlet_format("leung hotel"))
@@ -134,13 +144,7 @@ class hotel_bill_management:
             print("You are missing room details")
         else:
             while True:
-                print("**** RESTAURANT MENU ****")
-                print("1: Breakfast-- > 15 EUR")
-                print("2: Lunch--> 25 EUR")
-                print("3: Dinner --> 40 EUR")
-                print("4: Desert --> 10 EUR")
-                print("5: Beverages --> 5 EUR")
-                print("6: Exit")
+                print(RESTAURANT_MENU)
                 choice = input("Please select an option: ")
                 if choice == "1":
                     quantity = int(input("Please enter the amount of quantity: "))

@@ -25,6 +25,14 @@ This project was created in order for hotels to easily calcualte and track the e
 * Ability to calculate the total price of stay.
 * Generate a bill for guests
 
+**Error Handling**
+
+Error handling was implemented throughout the application with the use of try/except statements to handle exceptions raised for things like, None type values and Value errors.
+
+### Features Left to Implement
+
+As a future enhancement, I would like to add some functionanality to edit room bookings. I would also like to add a feature to retrieve a bill based on a customers name.
+
 IMPLEMENTATION
 * Bill Menu
     * When the application starts, you will get a welcome message with a main menu with the following options:
@@ -70,7 +78,20 @@ IMPLEMENTATION
      * This will be displayed to the user once the user has entered the number of meals they have had.
 
 * Generate bill
+   * This will generate the bill with the information for all of the customers expenses.
+   * Users will then have an option to return to the main menu or leave the application.
 
+   ## Technologies
+
+* Python - Python was the main language used to build the application.
+* [Pyfiglet](https://pypi.org/project/pyfiglet/0.7/) was used to create the design of the main menu 
+* [LucidCharts](https://www.lucidchart.com/) was used to create the UML Case Diagram, Class Diagram and the Flowchart.
+* [Google Drive](https://drive.google.com/) and [Google sheets API](https://developers.google.com/sheets/api) 
+    was connected, so data can be collected and stored on Google spreadhseet.
+* [Re](https://www.w3schools.com/python/python_regex.asp) was used to validate the input for customers email information.
+* [Gspread] (https://docs.gspread.org/en/v5.7.0/) was used for Google Sheets.
+
+ ## Testing
 
 
 
