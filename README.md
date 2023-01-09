@@ -105,6 +105,42 @@ IMPLEMENTATION
 
  ## Testing
 
+ ## Version control
+
+The following git commands were used throughout development to push code to the remote repo:
+
+- ```git add <file>``` - was used to add the file(s) to the staging area before they are committed.
+
+- ```git commit -m “commit message”``` - was used to commit changes to the local repository queue ready for the final step.
+
+### Unresolved bugs
+- No unfixed bugs
+
+## Deployment
+
+The site was deployed to Github pages
+- Navitgate to the settings tab of the Github repository via [Github repository](https://github.com/adrianleung5/Leung-Wellness).
+- Select pages tab on the left side of the page under code and automation.
+- Under source, select "deploy from a branch" and then click ‘save’.
+- Page will refresh, Return to the repository page and you will a "github-pages active" icon under enviornment on the right side of the page.
+- A live link can be found here 
+
+### To Fork the Repository
+- Go into Github and select the fork icon on the top right.
+- When you have pressed the fork button you should now have a full copy of the repository.
+
+### Create a local clone
+- Log into Github and go to the repository. Click on the ‘code’ tab beside the gitpod button.
+- Select the clipboard icon
+- In your IED open GitBash
+- Change the current working directory to the location you want the cloned directory to be made.
+- Type ‘git clone’ and then paste the URL copied from GitHub.
+- press enter and the local clone will be created.
+
+## Credits
+
+### Content
+
 
 
 
