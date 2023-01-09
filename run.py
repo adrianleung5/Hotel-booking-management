@@ -23,11 +23,11 @@ SHEET = GSPREAD_CLIENT.open("hotel_billing")
 
 MAIN_MENU = """
 Welcome to the hotel please select from the options below
-    1 enter customer information
+    1 Enter customer information
     2 Select the room
-    3 calculate restaurant expenses
-    4 generete bill
-    5 exit
+    3 Calculate restaurant expenses
+    4 Generete bill
+    5 Exit
 """
 ROOM_MENU = """
  **Please select from the following available rooms**

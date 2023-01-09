@@ -8,11 +8,9 @@ This project was created in order for hotels to easily calcualte and track the e
 
 ### User Stories
 
-* As a User, I would like to be able to easily find various guest infomration with ease
+* As a User, I would like to be able to easily store various guest infomration with ease.
 * As a User, I would like to be able to differentiate the different costs for customers during their stay. Such as restaurant expenses and room expenses.
 * As a User, I would like to be able to easily the determine the cost of the room the customers have used
-* As a User, I would like to be able to view bookings with ease,
-* Aa a User, I would like to be able to retrieve specific booking information with ease.
 * As a User, I would like to be able to return to the main menu without having to restart the application.
 * As a user, I would like to be able to generate a bill for customers to enable them to see the costs during their stay.
 
@@ -51,13 +49,21 @@ IMPLEMENTATION
  * Customer information Menu
     * When customer information menu has been selected, the following menu options appear:
     * Enter your customer name - This will enables users to input and store customers name.
+    * A error message will appear in red if users type names with less than 3 message
     * Enter phone number - This will allow the users to input their and store customer phone numbers.
+    * A warning message will appear if customers enter charcters here and enter numbers with less than 10 digits.
     * Enter your email - This will allow the users to enter and store their customer email.
+    * A error message will appear if users do not enter a emmail with an "@" and ".com".
     * Enter check in date - This option will enable users to enter customer check in date during their stay.
+    * A error message will appear when you type an invalid date or a date in the past.
     * Enter check out date - This option will return the user to enter customer checkout date during their.
+      A error message will appear when you type an invalid date or a date before the check in date.
     * Total room price - This will be calculated and displayed to the user based on the number of days and type of room.
+   
 
       ![Customer Information](docs/images/customer_information.png)
+
+      ![Validate Information](docs/images/validate_information.png)
 
 
  * Selecting room Menu
