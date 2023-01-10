@@ -224,26 +224,25 @@ class hotel_bill_management:
                 print(RESTAURANT_MENU)
                 choice = input("Please select an option: ")
                 if choice == "1":
-                    quantity = int(input("Please enter the " +
-                                         "amount of quantity: "))
-                    self.restaurant_price = self.restaurant_price + 15 * quantity
+                    qnty = int(input("Please enter the amount of quantity: "))
+                    self.restaurant_price = self.restaurant_price + 15 * qnty
                 elif choice == "2":
                     quantity = int(
                         input("Please enter the amount of quantity: "))
                     self.restaurant_price = (self.restaurant_price +
                                              25 * quantity)
                 elif choice == "3":
-                    quantity = int(
+                    qnty = int(
                         input("Please enter the amount of quantity: "))
-                    self.restaurant_price = self.restaurant_price + 40 * quantity
+                    self.restaurant_price = self.restaurant_price + 40 * qnty
                 elif choice == "4":
-                    quantity = int(
+                    qnty = int(
                         input("Please enter the amount of quantity: "))
-                    self.restaurant_price = self.restaurant_price + 10 * quantity
+                    self.restaurant_price = self.restaurant_price + 10 * qnty
                 elif choice == "5":
-                    quantity = int(
+                    qnty = int(
                         input("Please enter the amount of quantity: "))
-                    self.restaurant_price = self.restaurant_price + 5 * quantity
+                    self.restaurant_price = self.restaurant_price + 5 * qnty
                 elif choice == "6":
                     break
                 else:
@@ -341,7 +340,8 @@ class hotel_bill_management:
                 )
                 print(
                     yellow_color +
-                    "********************END OF BILL*******************************\n" +
+                    "********************END OF BILL*********" +
+                    "**********************\n" +
                     color_end)
                 self.update_spreadsheet(vat_price, total_price)
                 while True:
@@ -415,7 +415,8 @@ class hotel_bill_management:
                 color_end)
             print(
                 yellow_color +
-                "********************END OF BILL*******************************\n" +
+                "********************END OF BILL***" +
+                "****************************\n" +
                 color_end)
             self.update_spreadsheet(vat_price, total_price)
             while True:
@@ -468,7 +469,8 @@ class hotel_bill_management:
             if checkin_date1.date() >= checkout_date1.date():
                 print(
                     red_color +
-                    "Check out date cannot be before check in date, please try again" +
+                    "Check out date cannot be before check in" +
+                    " date, please try again" +
                     color_end)
                 valid_date = False
             else:
