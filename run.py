@@ -76,6 +76,10 @@ class hotel_bill_management:
         self.selected_room = selected_room
         self.restaurant_price = restaurant_price
 
+    """
+    This function is used to take customer information as input 
+    and store them to be iused in bill at later stage
+    """
     def customer_information(self):
         while True:
             self.name = input("Enter your name: ")
@@ -319,7 +323,6 @@ class hotel_bill_management:
                     + "    Number of days: "
                     + str(self.no_of_days)
                     + color_end
-                    + " \n"
                 )
                 print(yellow_color + "    Total Room Price: " 
                       + str(self.room_price)
