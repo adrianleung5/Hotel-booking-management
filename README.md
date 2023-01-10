@@ -52,6 +52,7 @@ IMPLEMENTATION
     
     ![Bill Menu](docs/images/leunghotel.png)
 
+
  * Customer information Menu
     * When customer information menu has been selected, the following menu options appear:
     * Enter your customer name - This will enables users to input and store customers name.
@@ -108,21 +109,26 @@ IMPLEMENTATION
     was connected, so data can be collected and stored on Google spreadhseet.
 * [Re](https://www.w3schools.com/python/python_regex.asp) was used to validate the input for customers email information.
 * [Gspread](https://docs.gspread.org/en/v5.7.0/) was used for Google Sheets.
+* [Gitpod](https://www.gitpod.io/)
+- [Github](https://github.com/)
 
  ## Testing
 
- Below are the test execution of positive functional tests:
+ * Below are the test execution of positive functional tests:
 
 ![Test1](docs/images/manualtest1.png)
 
 
 ![Test2](docs/images/manualtest2.png)
 
- Negative input validation testing was performed on all menu options to ensure correct input. All options behaved as expected, alerting the user of invalid inoput and then asking for input again.
+ * Negative input validation testing was performed on all menu options to ensure correct input. All options behaved as expected, alerting the user of invalid inoput and then asking for input again.
+
+ ### Pep8 Validation
+
 
  ## Deployment
 
- ## Version control
+ ### Version control
 
 The following git commands were used throughout development to push code to the remote repo:
 
@@ -157,6 +163,21 @@ The site was deployed to Github pages
 ## Credits
 
 ### Content
+- [Gareth-Mcgirr rental management](https://github.com/Gareth-McGirr/motorcycle-rental-management#Technologies) inspired this booking system and README 
+- [Pyfiglet](https://pypi.org/project/pyfiglet/0.7/) was used to create the design of the main menu  
+- [Google Drive](https://drive.google.com/) and [Google sheets API](https://developers.google.com/sheets/api)   
+
+### Code
+- I found a lot of useful tutorials online. I occasionally applied principles from them to the site after thoroughly understanding their code and modifying it to meet the needs of the site.
+- [Stack Overflow](https://stackoverflow.com/questions/69960172/how-to-make-a-bill-by-python) was used to generate the bill
+- [Stack Overflow](https://stackoverflow.com/questions/287871/how-do-i-print-colored-text-to-the-terminal) was used to add colors to the bill
+- [W3schools](https://www.w3schools.com/) was used to , research various python syntax
+- [GeeksforGeeks](https://www.geeksforgeeks.org/movie-tickets-booking-management-system-in-python/) was used to understand how to design the booking system
+- [GeeksforGeeks](https://www.geeksforgeeks.org/check-if-email-address-valid-or-not-in-python/) was used to validate the email input.
+- [GeeksforGeeks](https://stackoverflow.com/questions/16135069/how-do-i-validate-a-mobile-number-using-python) was used to validate the phone number input.
+
+
+
 
 
 
