@@ -86,7 +86,8 @@ class hotel_bill_management:
                     "").isalpha() and len(customer_name) > 3):
                 print(
                     red_color +
-                    "Name can only contain letter and spaces that are greater than three characters" +
+                    "Name can only contain letter and spaces" +
+                    " that are greater than three characters" +
                     color_end)
                 continue
             else:
@@ -208,7 +209,9 @@ class hotel_bill_management:
         else:
             print(
                 red_color +
-                "You need to add customer information before selecting a room" +
+                "You need to add customer " +
+                "information before" +
+                " selecting a room" +
                 color_end)
 
     def calculate_restaurant_expenses(self):
@@ -221,13 +224,14 @@ class hotel_bill_management:
                 print(RESTAURANT_MENU)
                 choice = input("Please select an option: ")
                 if choice == "1":
-                    quantity = int(
-                        input("Please enter the amount of quantity: "))
+                    quantity = int(input("Please enter the " +
+                                         "amount of quantity: "))
                     self.restaurant_price = self.restaurant_price + 15 * quantity
                 elif choice == "2":
                     quantity = int(
                         input("Please enter the amount of quantity: "))
-                    self.restaurant_price = self.restaurant_price + 25 * quantity
+                    self.restaurant_price = (self.restaurant_price +
+                                             25 * quantity)
                 elif choice == "3":
                     quantity = int(
                         input("Please enter the amount of quantity: "))
