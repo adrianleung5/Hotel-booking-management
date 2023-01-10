@@ -82,6 +82,9 @@ IMPLEMENTATION
    Total room price
  * This will be displayed to the user once the user 
  as selected a room. It is calculted based on length of stay multiplied by the type of room.
+ * Once the room price is generated the user will have a choice to skip restaurant expenses and generate the bill or add restuarant expenses.
+
+ ![Restaurant option](docs/images/restaurant_option.png)
 
  * Restaurant Menu
     * 1 Breakfast - 15 eur
@@ -97,8 +100,10 @@ IMPLEMENTATION
 * Generate bill
    * This will generate the bill with the information for all of the customers expenses.
    * Users will then have an option to return to the main menu or leave the application.
+   * Once the bill is generated, the user will also have the option continue to add another customer via main menu or exit the application.
 
    ![Bill](docs/images/bill.png)
+   ![Bill option](docs/images/continue.png)
 
 ### Technologies
 
