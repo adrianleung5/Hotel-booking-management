@@ -27,6 +27,12 @@ This project was created in order for hotels to easily calcualte and track the e
 
 Error handling was implemented throughout the application with the use of try/except statements to handle exceptions raised for things like, None type values and Value errors.
 
+## Flow Chart
+
+
+![Flow Chart](docs/images/project3.png)
+
+
 ### Features Left to Implement
 
 As a future enhancement, I would like to add some functionanality to edit room bookings. I would also like to add a feature to retrieve a bill based on a customers name.
@@ -104,6 +110,17 @@ IMPLEMENTATION
 * [Gspread](https://docs.gspread.org/en/v5.7.0/) was used for Google Sheets.
 
  ## Testing
+
+ Below are the test execution of positive functional tests:
+
+![Test1](docs/images/manualtest1.png)
+
+
+![Test2](docs/images/manualtest2.png)
+
+ Negative input validation testing was performed on all menu options to ensure correct input. All options behaved as expected, alerting the user of invalid inoput and then asking for input again.
+
+ ## Deployment
 
  ## Version control
 
