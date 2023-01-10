@@ -321,6 +321,9 @@ class hotel_bill_management:
                     + color_end
                     + " \n"
                 )
+                print(yellow_color + "    Total Room Price: " 
+                      + str(self.room_price)
+                      + " EUR")
                 vat_price = (self.room_price * 10) / 100
                 print(yellow_color + "OTHER EXPENSES: " + color_end)
                 print(
@@ -390,6 +393,9 @@ class hotel_bill_management:
             print(yellow_color + "    Number of days: " +
                   str(self.no_of_days) + color_end)
             print(yellow_color + "    Selected room: " + self.selected_room)
+            print(yellow_color + "    Total Room Price: " 
+                  + str(self.room_price)
+                  + " EUR")
             print(yellow_color + "RESTAURANT EXPENSES: " + color_end)
             print(
                 yellow_color
@@ -515,7 +521,7 @@ def main():
     while True:
 
         print(MAIN_MENU)
-        choice = input("please enter your choice\n")
+        choice = input("Please enter your choice\n")
         if choice == "1":
             hotel.customer_information()
         elif choice == "2":
@@ -527,7 +533,7 @@ def main():
         elif choice == "5":
             quit()
         else:
-            print("please enter the correct choice\n")
+            print("Please enter the correct choice\n")
 
 
 if __name__ == "__main__":
