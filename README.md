@@ -33,9 +33,8 @@ Error handling was implemented throughout the application with the use of try/ex
 ![Flow Chart](docs/images/project3.png)
 
 
-### Features Left to Implement
+### Features
 
-As a future enhancement, I would like to add some functionanality to edit room bookings. I would also like to add a feature to retrieve a bill based on a customers name.
 
 IMPLEMENTATION
 * Bill Menu
@@ -79,6 +78,9 @@ IMPLEMENTATION
     * Triple room - 150 eur
     * Family room - 200 eur
 
+
+   ![Select Room](docs/images/room.png)
+
    Total room price
  * This will be displayed to the user once the user 
  as selected a room. It is calculted based on length of stay multiplied by the type of room.
@@ -105,17 +107,28 @@ IMPLEMENTATION
    ![Bill](docs/images/bill.png)
    ![Bill option](docs/images/continue.png)
 
+
+### Features Left to Implement
+
+As a future enhancement, I would like to add some functionanality to edit room bookings. I would also like to add a feature to retrieve a bill based on a customers name.
+
+
 ### Technologies
 
 * Python - Python was the main language used to build the application.
+   Python - Python was the main language used to build the application.
+    * Python packages used:
+        * Re - Used to validate email in put
+        * [Gspread](https://docs.gspread.org/en/v5.7.0/) was used for Google Sheets.
+        * [Pyfiglet](https://pypi.org/project/pyfiglet/0.7/) was used to create the design of the main menu  
+        * [Datetime]](https://www.w3schools.com/python/python_datetime.asp) was used to input date data.
+
 * [Pyfiglet](https://pypi.org/project/pyfiglet/0.7/) was used to create the design of the main menu 
 * [LucidCharts](https://www.lucidchart.com/) was used to create the UML Case Diagram, Class Diagram and the Flowchart.
 * [Google Drive](https://drive.google.com/) and [Google sheets API](https://developers.google.com/sheets/api) 
     was connected, so data can be collected and stored on Google spreadhseet.
 * [Re](https://www.w3schools.com/python/python_regex.asp) was used to validate the input for customers email information.
-* [Gspread](https://docs.gspread.org/en/v5.7.0/) was used for Google Sheets.
-* [Gitpod](https://www.gitpod.io/)
-- [Github](https://github.com/)
+
 
  ## Testing
 
@@ -127,6 +140,7 @@ IMPLEMENTATION
 ![Test2](docs/images/manualtest2.png)
 
  * Negative input validation testing was performed on all menu options to ensure correct input. All options behaved as expected, alerting the user of invalid inoput and then asking for input again.
+
 
  ### Pep8 Validation
 
@@ -142,7 +156,7 @@ The following git commands were used throughout development to push code to the 
 - ```git commit -m “commit message”``` - was used to commit changes to the local repository queue ready for the final step.
 
 ### Unresolved bugs
-- No unfixed bugs
+- Color of application turns red when invalid inputs are entered continously.
 
 ## Deployment
 
@@ -180,6 +194,7 @@ The site was deployed to Github pages
 - [GeeksforGeeks](https://www.geeksforgeeks.org/movie-tickets-booking-management-system-in-python/) was used to understand how to design the booking system
 - [GeeksforGeeks](https://www.geeksforgeeks.org/check-if-email-address-valid-or-not-in-python/) was used to validate the email input.
 - [GeeksforGeeks](https://stackoverflow.com/questions/16135069/how-do-i-validate-a-mobile-number-using-python) was used to validate the phone number input.
+- [Datetime]](https://www.w3schools.com/python/python_datetime.asp) was used to input date data.
 
 
 
