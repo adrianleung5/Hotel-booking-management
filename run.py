@@ -76,12 +76,12 @@ class hotel_bill_management:
         self.selected_room = selected_room
         self.restaurant_price = restaurant_price
 
-    """
-    Display customer information options. Take user input
-    and call next functions. If invalid input, show
-    error and ask for input again.
-    """
     def customer_information(self):
+        """
+        Display customer information options. Take user input
+        and call next functions. If invalid input, show
+        error and ask for input again.
+        """
         while True:
             self.name = input("Enter your name: ")
             customer_name = self.name
@@ -171,11 +171,11 @@ class hotel_bill_management:
                 self.customer_info_added = True
                 break
 
-     """
-    Display Room price menu options. Take user input
-    and call next functions. 
-    """
     def calculate_room_price(self):
+        """
+        Display Room price menu options. Take user input
+        and call next functions.
+        """
         if self.customer_info_added:
             while True:
                 print(ROOM_MENU)
@@ -223,12 +223,12 @@ class hotel_bill_management:
                 " selecting a room" +
                 color_end)
 
-     """
-    Display Calculate restaurant options. Take user input
-    and call next functions. If invalid input, show
-    error and ask for input again.
-    """
     def calculate_restaurant_expenses(self):
+        """
+        Display Calculate restaurant options. Take user input
+        and call next functions. If invalid input, show
+        error and ask for input again.
+        """
         if not self.customer_info_added:
             print(red_color + "You are missing customer information")
         elif not self.room_info_added:
@@ -271,12 +271,13 @@ class hotel_bill_management:
                 + " Eur ****"
                 + color_end
             )
-    """
-    Display Bill. Give user option
-    to close application or move
-    to next customer.
-    """
+
     def generate_and_retrieve_bill(self):
+        """
+        Display Bill. Give user option
+        to close application or move
+        to next customer.
+        """
         print(self.room_price)
         if not self.customer_info_added:
             print(
@@ -338,7 +339,7 @@ class hotel_bill_management:
                     + str(self.no_of_days)
                     + color_end
                 )
-                print(yellow_color + "    Total Room Price: " 
+                print(yellow_color + "    Total Room Price: "
                       + str(self.room_price)
                       + " EUR")
                 vat_price = (self.room_price * 10) / 100
@@ -410,7 +411,7 @@ class hotel_bill_management:
             print(yellow_color + "    Number of days: " +
                   str(self.no_of_days) + color_end)
             print(yellow_color + "    Selected room: " + self.selected_room)
-            print(yellow_color + "    Total Room Price: " 
+            print(yellow_color + "    Total Room Price: "
                   + str(self.room_price)
                   + " EUR")
             print(yellow_color + "RESTAURANT EXPENSES: " + color_end)
