@@ -49,6 +49,9 @@ RESTAURANT_MENU = """
 
 
 class hotel_bill_management:
+    """
+    Class for bill management 
+    """
     def __init__(
         self,
         name="",
@@ -461,12 +464,18 @@ class hotel_bill_management:
                     continue
 
     def remove_bill_for_room(self):
+        """
+        Function to delete the bill
+         """
         self.room_price = 0
         self.restaurant_price = 0
         self.customer_info_added = False
         main()
 
     def isvalidcheck_in_date(self, input_date):
+        """
+        Function to check if check in date is valid
+        """
         valid_date = True
         try:
             day, month, year = input_date.split("/")
@@ -480,6 +489,9 @@ class hotel_bill_management:
             return valid_date
 
     def isvalidcheck_out_date(self, check_in_date, checkout_date):
+        """
+        Function to check, checkout date is valid
+        """
         valid_date = True
         try:
             day1, month1, year1 = check_in_date.split("/")
@@ -507,6 +519,9 @@ class hotel_bill_management:
             return valid_date
 
     def check_email(self, email):
+        """
+        Function to check email iput is valid
+        """
         valid_email = False
         pattern = r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b"
         if re.match(pattern, email):
@@ -516,6 +531,9 @@ class hotel_bill_management:
             return valid_email
 
     def update_spreadsheet(self, vat, total_price):
+        """
+        Function to update spreadsheet
+        """
         spread_sheet = SHEET.worksheet("billing information")
         spread_sheet.append_row(
             [
@@ -535,6 +553,9 @@ class hotel_bill_management:
 
 
 def main():
+    """
+    Main function for the main menu
+    """
     hotel = hotel_bill_management()
     while True:
 
