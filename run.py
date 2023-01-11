@@ -26,7 +26,7 @@ Welcome to the hotel please select from the options below
     1 Enter customer information
     2 Select the room
     3 Calculate restaurant expenses
-    4 Generete bill
+    4 Generate bill
     5 Exit
 """
 ROOM_MENU = """
@@ -63,7 +63,7 @@ class hotel_bill_management:
         room_price=0,
         selected_room="",
     ):
-        print(pyfiglet.figlet_format("leung hotel"))
+        print(pyfiglet.figlet_format("Leung hotel"))
         self.name = name
         self.phone_number = phone_number
         self.email = email
@@ -102,7 +102,7 @@ class hotel_bill_management:
             if not self.phone_number.isnumeric():
                 print(
                     red_color +
-                    "phone number can only contain numbers" +
+                    "Phone number can only contain numbers" +
                     color_end)
                 continue
             elif len(self.phone_number) < 10:
@@ -128,7 +128,7 @@ class hotel_bill_management:
 
         while True:
             self.check_in_date = input(
-                "enter your check in date in the format of dd/mm/yyyy : "
+                "Enter your check in date in the format of dd/mm/yyyy : "
             )
             if not self.isvalidcheck_in_date(self.check_in_date):
                 print(
@@ -143,7 +143,7 @@ class hotel_bill_management:
 
         while True:
             self.check_out_date = input(
-                "enter your check out date in the format of dd/mm/yyyy : "
+                "Enter your check out date in the format of dd/mm/yyyy : "
             )
             if not self.isvalidcheck_out_date(
                     self.check_in_date,
@@ -190,7 +190,7 @@ class hotel_bill_management:
                 else:
                     print(
                         red_color +
-                        "please select the correct option" +
+                        "Please select the correct option" +
                         color_end)
                     continue
                 print(
@@ -204,7 +204,7 @@ class hotel_bill_management:
                 )
                 print(
                     green_color
-                    + "Please continue to the restaurant expenses"
+                    + "Please continue to restaurant expenses if any"
                     + color_end
                     + "\n"
                 )
@@ -252,13 +252,13 @@ class hotel_bill_management:
                 else:
                     print(
                         red_color +
-                        "please enter the correct choice" +
+                        "Please enter the correct choice" +
                         color_end)
             print(
                 green_color
                 + "**** Total restaurant cost = "
                 + str(self.restaurant_price)
-                + " eur ****"
+                + " Eur ****"
                 + color_end
             )
 
@@ -274,7 +274,7 @@ class hotel_bill_management:
         elif self.restaurant_price == 0:
             print(red_color + "No restaurant expenses" + color_end)
             print("Would you like to add restuarant expenses?")
-            print("1: add restaurant expenses to bill")
+            print("1: add Restaurant expenses to bill")
             print("2: continue to generate bill without restaurant expenses")
             choice = input("Please enter your choice: \n")
             if choice == "1":
