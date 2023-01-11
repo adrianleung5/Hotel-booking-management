@@ -23,9 +23,6 @@ This project was created in order for hotels to easily calcualte and track the e
 * Ability to calculate the total price of stay.
 * Generate a bill for guests
 
-**Error Handling**
-
-Error handling was implemented throughout the application with the use of try/except statements to handle exceptions raised for things like, None type values and Value errors.
 
 ## Flow Chart
 
@@ -111,6 +108,11 @@ IMPLEMENTATION
 ### Features Left to Implement
 
 As a future enhancement, I would like to add some functionanality to edit room bookings. I would also like to add a feature to retrieve a bill based on a customers name.
+
+
+**Error Handling**
+
+Error handling was implemented throughout the application with the use of try/except statements to handle exceptions raised for things like, None type values and Value errors.
 
 
 ### Technologies
