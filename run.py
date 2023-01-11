@@ -50,7 +50,7 @@ RESTAURANT_MENU = """
 
 class hotel_bill_management:
     """
-    Class for bill management 
+    Class for bill management
     """
     def __init__(
         self,
