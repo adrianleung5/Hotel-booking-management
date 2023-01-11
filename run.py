@@ -77,8 +77,9 @@ class hotel_bill_management:
         self.restaurant_price = restaurant_price
 
     """
-    This function is used to take customer information as input 
-    and store them to be iused in bill at later stage
+    Display customer information options. Take user input
+    and call next functions. If invalid input, show
+    error and ask for input again.
     """
     def customer_information(self):
         while True:
@@ -170,6 +171,10 @@ class hotel_bill_management:
                 self.customer_info_added = True
                 break
 
+     """
+    Display Room price menu options. Take user input
+    and call next functions. 
+    """
     def calculate_room_price(self):
         if self.customer_info_added:
             while True:
@@ -218,6 +223,11 @@ class hotel_bill_management:
                 " selecting a room" +
                 color_end)
 
+     """
+    Display Calculate restaurant options. Take user input
+    and call next functions. If invalid input, show
+    error and ask for input again.
+    """
     def calculate_restaurant_expenses(self):
         if not self.customer_info_added:
             print(red_color + "You are missing customer information")
@@ -261,7 +271,11 @@ class hotel_bill_management:
                 + " Eur ****"
                 + color_end
             )
-
+    """
+    Display Bill. Give user option
+    to close application or move
+    to next customer.
+    """
     def generate_and_retrieve_bill(self):
         print(self.room_price)
         if not self.customer_info_added:
