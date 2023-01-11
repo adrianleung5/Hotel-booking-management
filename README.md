@@ -144,6 +144,10 @@ As a future enhancement, I would like to add some functionanality to edit room b
 
  ### Pep8 Validation
 
+ All python code was ran through CI Python Linter validator and any warnings or errors was fixed. Code then validated successfully.
+
+ ![CI Linter](docs/images/linter.png)
+
 
  ## Deployment
 
