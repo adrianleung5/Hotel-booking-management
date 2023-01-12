@@ -153,6 +153,26 @@ Error handling was implemented throughout the application with the use of try/ex
 
  ## Deployment
 
+* Log in to [Heroku]( https://id.heroku.com/login) or create an account if required.
+* Then, click the button labelled **New** from the dashboard in the top right corner and from the drop-down menu select **Create New App**.
+* You must enter a unique app name, (I used mastermind-code-breaker).
+* Next, select your region, (I chose Europe as I am in Ireland).
+* Click on the **Create App** button.
+* The next page you will see is the project’s Deploy Tab.  Click on the **Settings Tab** and scroll down to **Config Vars**.
+* Click **Reveal Config Vars** and enter **port** into the **Key** box and **8000** into the **Value** box and click the **Add** button.
+* Next, scroll down to the Buildpack section click **Add Buildpack** select **python** and click **Save Changes**.
+* Repeat step 8 to add **node.js**.
+ **Note:** The Buildpacks must be in the correct order. If not click and drag them to move into the correct order.
+* Scroll to the top of the page and now choose the **Deploy** tab.
+* Select **Github** as the deployment method.
+* Confirm you want to connect to GitHub.
+8 Search for the repository name and click the connect button.
+* Scroll to the bottom of the deploy page and select preferred deployment type:
+
+* Click either **Enable Automatic Deploys** for automatic deployment when you push updates to Github.
+
+* Select the correct branch for deployment from the drop-down menu and click **Deploy Branch** for manual deployment.
+
  ### Version control
 
 The following git commands were used throughout development to push code to the remote repo:
