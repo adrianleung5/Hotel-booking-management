@@ -220,7 +220,7 @@ The site was deployed to Github pages
 - [GeeksforGeeks](https://www.geeksforgeeks.org/movie-tickets-booking-management-system-in-python/) was used to understand how to design the booking system
 - [GeeksforGeeks](https://www.geeksforgeeks.org/check-if-email-address-valid-or-not-in-python/) was used to validate the email input.
 - [GeeksforGeeks](https://stackoverflow.com/questions/16135069/how-do-i-validate-a-mobile-number-using-python) was used to validate the phone number input.
-- [Datetime]](https://www.w3schools.com/python/python_datetime.asp) was used to input date data.
+- [Datetime](https://www.w3schools.com/python/python_datetime.asp) was used to input date data.
 
 
 
