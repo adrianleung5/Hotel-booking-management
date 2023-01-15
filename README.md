@@ -184,15 +184,6 @@ The following git commands were used throughout development to push code to the 
 ### Unresolved bugs
 - Color of application turns red when invalid inputs are entered continously.
 
-## Deployment
-
-The site was deployed to Github pages
-- Navitgate to the settings tab of the Github repository via [Github repository](https://github.com/adrianleung5/Leung-Wellness).
-- Select pages tab on the left side of the page under code and automation.
-- Under source, select "deploy from a branch" and then click ‘save’.
-- Page will refresh, Return to the repository page and you will a "github-pages active" icon under enviornment on the right side of the page.
-- A live link can be found here 
-
 ### To Fork the Repository
 - Go into Github and select the fork icon on the top right.
 - When you have pressed the fork button you should now have a full copy of the repository.
